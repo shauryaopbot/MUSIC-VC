@@ -65,11 +65,11 @@ async def repo(_, message: Message):
 
 
 @app.on_message(
-    filters.command("ping", config.PREFIXES) & filters.group & ~filters.edited
+    filters.command("Ping", config.PREFIXES) & filters.group & ~filters.edited
 )
 @handle_error
 async def ping(_, message: Message):
-    await message.reply_text(f"🤖 **Pong!**\n`{await pytgcalls.ping} ms`")
+    await message.reply_text(f"🥀HUH!🥀\n`{await pytgcalls.ping} ms`")
 
 
 @app.on_message(
